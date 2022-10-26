@@ -1,0 +1,30 @@
+#result{
+    
+    color: rgb(17, 17, 17);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 50px;
+
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),url('/static/images/customer-churn.jpg');
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+.nav-menu
+{
+    font-family:cursive;
+    padding-left: 10px;
+    font-size: 25px;
+    position:absolute;
+    top: 1%;
+}
+.nav-menu li{
+    display:inline-block;
+    padding:5px 20px;
+    color:antiquewhite;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

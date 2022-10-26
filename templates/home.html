@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prediction</title>
+    <link rel="stylesheet" href="/static/css/prediction.css" type="text/css">
+</head>
+<body>
+  <h1 id="heading" style="color:aliceblue ;">Churn Prediction</h1>
+
+  <div class="content" style='color:rgb(237, 235, 241)'><b>
+    <p><h2>The aim is to predict whether<br> the customer will churn or not.</h2></p>
+   </br>
+  </div>
+     <!-- Input Form -->
+<div  class="input form" style='color:honeydew'>
+    <form action="{{url_for('prediction')}}" method="post">
+      <div class="row">
+      <div class="column">
+
+
+      <h3><label for="input">Tenure</label></h3>
+      <input type="text" name="Tenure" placeholder="Tenure in months">
+
+      <h3><label for="input">PreferredLoginDevice</label></h3>
+        <select name="PreferredLoginDevice">
+          <option value="Mobile Phone">Mobile Phone</option>
+          <option value="Computer">Computer</option>
+        </select>
+      
+      
+      <h3><label for="input">CityTier</label></h3>
+        <select name="CityTier">
+          <option value="1">tier 1</option>
+          <option value="2">tier 2</option>
+          <option value="3">tier 3</option>
+        </select><br>
+      
+
+      <h3><label for="input">WarehouseToHome</label></h3>
+      <input type="text" name="WarehouseToHome" placeholder="distance">
+
+      <h3><label for="input">PreferredPaymentMode</label></h3>
+        <select name="PreferredPaymentMode">
+          <option value="Debit Card">Debit Card</option>
+          <option value="Credit Card">Credit Card</option>
+          <option value="E wallet">E wallet</option>
+          <option value="Cash on Delivery">Cash on Delivery</option>
+          <option value="UPI">UPI</option>
+        </select>
+      
+      <h3><label for="input">Gender</label></h3>
+        <select name="Gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select><br>
+      
+      <h3><label for="input">HoursSpendOnApp</label></h3>
+      <input type="text" name="HoursSpendOnApp" placeholder="Hours Spend">
+
+      <h3><label for="input">NumberOfDeviceRegistered</label></h3>
+      <input type="text" name="NumberOfDeviceRegistered" placeholder="Number Of Device">
+
+      <h3><label for="input">PreferedOrderCat</label></h3>
+        <select name="PreferedOrderCat">
+          <option value="Mobile Phone">Mobile Phone</option>
+          <option value="Laptop & Accessory">Laptop & Accessory</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Grocery">Grocery</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+
+      <div class="column">
+        
+
+      <h3><label for="input">SatisfactionScore </label></h3>
+        <select name="SatisfactionScore">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+      <h3><label for="input">MaritalStatus </label></h3>
+        <select name="MaritalStatus">
+          <option value="Married">Married</option>
+          <option value="Single">Single</option>
+          <option value="Divorced">Divorced</option>
+        </select>
+
+      <h3><label for="input">NumberOfAddress</label></h3>
+      <input type="text" name="NumberOfAddress" placeholder="Number Of Address">
+  
+      <h3><label for="input">Complain</label></h3>
+        <select name="Complain">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+      
+      <h3><label for="input">OrderAmountHikeFromlastYear</label></h3>
+      <input type="text" name="OrderAmountHikeFromlastYear">
+
+      <h3><label for="input">CouponUsed</label></h3>
+      <input type="text" name="CouponUsed" placeholder="Number Of Coupon Used">
+    
+      <h3><label for="input">OrderCount</label></h3>
+      <input type="text" name="OrderCount" placeholder="Order Count">
+
+
+      <h3><label for="input">DaySinceLastOrder</label></h3>
+      <input type="text" name="DaySinceLastOrder" placeholder="DaySinceLastOrder">
+
+      <h3><label for="input">CashbackAmount</label></h3>
+      <input type="number" name="CashbackAmount" placeholder="CashbackAmount">
+      
+        <br>
+        <input type ='submit' value ='predict'>
+      </div>
+      </div>
+      </form>
+   
+    
+      </div>
+
+      
+    
+</body>
+</html>
